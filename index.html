@@ -1,1 +1,24 @@
 <!DOCTYPE html>
+<html>
+    <head>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Interest Calculator</title>
+    </head>
+    
+    <body>
+        <form><br/>
+          Capital<input type="number" id="C"/> <br/><br/>
+           Years <input type="number" id="Y"/> <br/><br/>
+            Rate<input type="range" id="R" min="1" max="100" step="0.75" value="defauit"/>
+            <span id="default">25%</span>
+        </form>
+        
+        <button onclick="calculate()">Calculate</button>
+        <p id="result"></p>
+        
+
+      
+   </body>
+ 
+</html>
