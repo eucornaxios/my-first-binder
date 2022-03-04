@@ -1,17 +1,8 @@
 
 var http = require("http");
 
-var server = http.createServer(function (response,request){
-                               
-                               var body = "Hello World!";
-    response.writeHead(200, { 
-        'Content-Length': body.length,
-        'Content-Type': 'text/plain'
-    });
-    
-    
-    response.end(body);
-    
-});
-
-server.listen(8080);
+ http.createServer(function (teq, res) {
+      res.writeHead(200, {'Content-Type':
+    'text/html'});
+        res.end("Hello Wirld!");
+}).listen(8080);
